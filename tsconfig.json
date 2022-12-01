@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+      "@dcloudio/types",
+      // "miniprogram-api-typings",// 不开发小程序不需要
+      // "mini-types"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "./typing/*.d.ts",
+    "./super-controller/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "unpackage",
+    "dist",
+    "src/**/*.nvue",
+  ]
+}
